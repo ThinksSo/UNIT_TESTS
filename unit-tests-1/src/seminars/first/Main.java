@@ -7,25 +7,25 @@ import java.util.Arrays;
 import java.util.Calendar;
 import java.util.List;
 
-import static org.assertj.core.api.Assertions.*; // Импортируем классы библиотеки assertJ
+import static org.assertj.core.api.Assertions.*; 
 
 public class Main {
     public static void main(String[] args) {
-        // Проверьте, как работают методы:
 
-        // assertConditionA();
 
-        // assertConditionB();
+        assertConditionA();
 
-        // System.out.println(sum(2_147_483_647, 1));
+        assertConditionB();
 
-        // happyNY();
+        System.out.println(sum(2_147_483_647, 1));
 
-        // expectedValue();
+        happyNY();
 
-        // checkingShoppingCart()
+        expectedValue();
 
-        /*
+        checkingShoppingCart();
+
+
                 assertThat(colors)
                         .isNotEmpty()             // Массив не должен быть пустым
                         .hasSize(7)               // Размер массива должен быть равен 7
@@ -35,13 +35,12 @@ public class Main {
                         .startsWith("aqua")     // Первым цветом в массиве должен быть "aqua"
                         .containsSequence("yellow", "blue") // В массиве должна быть последовательность цветов "yellow", "blue"
                         .doesNotContain("red", "black");    //Массив не должен содержать цвета: "red", "black"
-        */
 
-        //  String[] colors = {};
+        String[] colors = {};
 
-        //  testingJavaCollectionsAssertJ(colors);
+        testingJavaCollectionsAssertJ(colors);
 
-        //  checkingHero();
+        checkingHero();
     }
 
     //                  Практические задания:
@@ -80,7 +79,7 @@ public class Main {
 
     // 1.5
     // выражение assert верно, нужно исправить код
-    // Вот наиболее распространенный вариант использования. Предположим, вы включаете значение enum:
+    // Наиболее распространенный вариант использования. Предположим, включаете значение enum:
     public static void checkingShoppingCart() {
         ArrayList<String> productCategories = new ArrayList<>();
         productCategories.add("fruits");
@@ -133,16 +132,6 @@ public class Main {
         List<String> heroBag = Arrays.asList("Bow", "Axe", "Gold");
         Hero emmett = new Hero("Emmett", 50, "sword", heroBag, true);
 
-        /*
-        1. Проверить, что герой создался с именем Emmett
-        2. Проверить, что значение прочности брони героя равно 50
-        3. Проверить, что у героя оружие типа sword
-        4. Проверить содержимое инвентаря героя (не пустой, размер 3, содержимое "Bow", "Axe", "Gold", порядок не важен)
-        5. Проверить, что герой человек (свойство true)
-        */
-
-        // assert "Emmett".equals(emmett.getName()): "Name should be Emmett";
-        // Далее продолжите сами ...
 
     }
 
